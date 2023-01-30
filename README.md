@@ -10,6 +10,8 @@ psql --dbname=postgres --host=localhost --port=5432 --username=postgres
 cargo install diesel_cli --no-default-features --features postgres
 ```
 
+Create `.env` file with `DATABASE_URL` String (Needed By Rust Code To Connect To PostgreSQL DB)
+
 ```bash
 echo DATABASE_URL=postgres://postgres:test123@localhost/mydb > .env
 ```
